@@ -1,5 +1,7 @@
-# CS:GO Chaos Server side
+# CS:GO Chaos
+# USE IT AT YOUR OWN RISK
 ## This was heavily inspired by GTA V Chaos Mod
+### This is usable in real competetive, valve servers. 
 ### This is only the server side, which manages the activation of chaos features, voting through livestream services like Youtube & Twitch & the main UI
 ### The Client side, which contains the actual features is currently not public for your own safety
 ### As the Client works the same way as a cheat does, injecting itself to the CS:GO process, it is important that it is safe to inject and use.

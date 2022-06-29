@@ -6,7 +6,10 @@ type Data = {
 };
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  ToggleEffect(req.body.effect, req.body.status);
-
+  try {
+    ToggleEffect(req.body.effect, req.body.status);
+  } catch (ex) {
+    console.log(ex);
+  }
   res.status(200).json({ status: 'Done!' });
 };

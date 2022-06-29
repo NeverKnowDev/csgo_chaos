@@ -12,10 +12,8 @@ export function ToggleEffect(effect_name: string, status: boolean = true): Promi
             const response = data as unknown;
             resolve(response as string);
         }).catch((err: AxiosError) => {
-            if(err.response)
-                reject(err.response.data)
-            else 
-                reject("An error has occured")
+            console.log("Could not start effect")
         })
     })
 }
+

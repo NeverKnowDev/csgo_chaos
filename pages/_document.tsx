@@ -1,4 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import init from './../services/twitch_bot';
+
+
 
 class CustomDocument extends Document {
   return = (): JSX.Element => (

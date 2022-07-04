@@ -3,7 +3,7 @@ import { t_Effect } from './../interfaces/t_Effect';
     name: "Force Shoot",
     description: "You are constantly shooting",
     command: "force_attack",
-    time: 10 
+    time: 20 
   }, {
     name: "Deaf",
     description: "Mutes all sound",
@@ -13,32 +13,32 @@ import { t_Effect } from './../interfaces/t_Effect';
     name: "Shaky",
     description: "Your sensitivity is unstable",
     command: "shaky",
-    time: 20 
+    time: 40 
   }, {
     name: "Always Crouch",
     description: "You are always crouching",
     command: "crouch_only",
-    time: 25
+    time: 45
   }, {
     name: "Slippery Hands",
     description: "When an Enemy is visible, you drop all your weapons",
     command: "slippery_hands",
-    time: 15,
+    time: 25,
   }, {
     name: "Switch Spin",
     description: "Switches between +right and +left every few secodns",
     command: "switch_spin",
-    time: 10,
+    time: 30,
   }, {
     name: "Disco Light",
     description: "Makes the world Disco Light",
     command: "rgb_world",
-    time: 10,
+    time: 35,
   }, {
     name: "Deep Fried",
     description: "The world looks like it has been deep fried",
     command: "deep_fried",
-    time: 20,
+    time: 30,
   }, {
     name: "Console Expirence",
     description: "Limits your FPS",
@@ -73,7 +73,7 @@ import { t_Effect } from './../interfaces/t_Effect';
     name: "1990s Input Style",
     description: "Your Yaw sensitivity is much higher than your pitch",
     command: "old_input",
-    time: 10
+    time: 30
   }, {
     name: "Disable Random Direction",
     description: "Disables a random movement direction",
@@ -83,7 +83,7 @@ import { t_Effect } from './../interfaces/t_Effect';
     name: "Im Here",
     description: "Sends a message in chat of your current location",
     command: "im_here",
-    time: 10
+    time: 25
   }, {
     name: "Slow Movement",
     description: "Makes your movement slower",
@@ -93,22 +93,27 @@ import { t_Effect } from './../interfaces/t_Effect';
     name: "Sticky Hands",
     description: "Your hands are stuck to your weapon",
     command: "sticky_hands",
-    time: 30
+    time: 35
   }, {
     name: "Help! My W key is stuck",
     description: "Your W key stuck",
     command: "w_key_stuck",
-    time: 10
+    time: 25
   }, {
     name: "Realistic Recoil", 
     description: "Your recoil is realistic",
     command: "real_recoil",
-    time: 50 
+    time: 60 
   }, {
     name: "Enemies are magic",
     description: "When looking at an enenmy, you will do a 180 degree turn",
     command: "enemy_magic",
-    time: 20 
+    time: 30 
+  }, {
+    name: "One Hit KO",
+    description: "Your HP is set to one",
+    command: "one_hit_ko",
+    time: 30
   }];
 
 

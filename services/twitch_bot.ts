@@ -1,5 +1,5 @@
-import { increase_vote } from './twitch_votes';
 const isnumber = require('is-number');
+import voting from './twitch_votes';
 
 // Require necessary node modules
 // Make the variables inside the .env element available to our Node project
@@ -45,11 +45,11 @@ async function init() {
       //Push to votedUsers array the username of the user who voted
       votedUsers.push(userstate.username);
       setTimeout(() => {
-        console.log(userstate.username);
+        console.log(userstate.username + " can vote again");
         //Remove the username from the votedUsers array
         votedUsers.splice(votedUsers.indexOf(userstate.username), 1);
       }, 15000);
-      increase_vote(parseInt(message));
+      voting.increase_vote(parseInt(message));
     }
     if (!self) {
       return;

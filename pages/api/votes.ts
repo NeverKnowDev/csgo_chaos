@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { ToggleEffect } from '../../services/effect';
-import { getVotes } from '../../services/twitch_votes';
+import voting from './../../services/twitch_votes';
 
 type Data = {
   status: string;
@@ -8,5 +8,5 @@ type Data = {
 };
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  res.status(200).json({ status: 'Done!', votes: getVotes() });
+  res.status(200).json({ status: 'Done!', votes: voting.getVotes() });
 };
